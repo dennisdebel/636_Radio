@@ -1370,7 +1370,7 @@
     )
     (pin "1" (uuid a75bb618-7b20-4203-8202-6743e27983e4))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "#FLG01") (unit 1)
         )
@@ -1396,7 +1396,7 @@
     (pin "T" (uuid 71efe5e3-a581-44d7-8f03-1d388cf3c955))
     (pin "R" (uuid 3c6e28a8-788a-4c36-93b4-da7ca91d3249))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "J1") (unit 1)
         )
@@ -1422,7 +1422,7 @@
     (pin "2" (uuid 175e237c-18fa-4219-b96c-5caa1e4f321d))
     (pin "1" (uuid 297b50a0-2a26-4f61-ac7e-04cada60405e))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "C5") (unit 1)
         )
@@ -1454,7 +1454,7 @@
     (pin "1" (uuid 38523a5d-dcf4-466b-8dd0-ed69a1aeb434))
     (pin "2" (uuid edb91e11-82d7-446d-b9c1-8e92c6fd9153))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "D1") (unit 1)
         )
@@ -1480,7 +1480,7 @@
     (pin "1" (uuid 0d08ec64-a297-4e3a-bc95-caec07f85bbd))
     (pin "2" (uuid 0df0bafa-5c0d-4321-9273-43d6b7978485))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "L2") (unit 1)
         )
@@ -1505,7 +1505,7 @@
     )
     (pin "1" (uuid 10a6ec05-e210-46d9-a738-25b5f12514ba))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "#PWR02") (unit 1)
         )
@@ -1531,7 +1531,7 @@
     (pin "2" (uuid abbbd399-01d7-4573-a5a3-72b765032b46))
     (pin "1" (uuid ac72b44d-753c-4e94-9e9f-5125586f8952))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "C2") (unit 1)
         )
@@ -1557,7 +1557,7 @@
     (pin "1" (uuid 9ee297b5-9922-4c1d-9f8b-06c8853ac7e2))
     (pin "2" (uuid 02532908-ec99-4171-9969-7f902cc3f5ba))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "R2") (unit 1)
         )
@@ -1582,7 +1582,7 @@
     )
     (pin "1" (uuid f376dffc-9cfa-47e4-9bc4-900844d8f489))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "#PWR01") (unit 1)
         )
@@ -1608,7 +1608,7 @@
     (pin "2" (uuid 9bae7e05-67bf-4cc3-a38b-6cc5e16e05b3))
     (pin "1" (uuid fa14b7ba-e724-4503-b9ba-6151957f2418))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "C4") (unit 1)
         )
@@ -1638,7 +1638,7 @@
     (pin "6" (uuid 8b52979f-8e61-4ab2-b3f8-2c1d5ddea695))
     (pin "3" (uuid 184a17b9-646a-4f3b-be6c-a402f560a531))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "L1") (unit 1)
         )
@@ -1664,7 +1664,7 @@
     (pin "1" (uuid ad3083b1-d5f8-4094-b8dd-71c2c1061a63))
     (pin "2" (uuid eafb5141-e92b-49c0-9f05-ea00cfb63274))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "Battery1") (unit 1)
         )
@@ -1690,7 +1690,7 @@
     (pin "1" (uuid 1ab3bdb3-9f2d-49e8-aaec-b232f231ae23))
     (pin "2" (uuid ca447795-3e24-4e0b-b2ed-71d142cbdd57))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "R1") (unit 1)
         )
@@ -1717,7 +1717,7 @@
     (pin "1" (uuid 5912893f-3d75-4345-b126-91b5b75b1f60))
     (pin "2" (uuid 30eb0c15-b6e6-485a-b870-a1097142e631))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "RV1") (unit 1)
         )
@@ -1744,7 +1744,7 @@
     (pin "1" (uuid e1b37887-903f-44fc-9f26-493c4b4f7871))
     (pin "3" (uuid fe192232-2903-4704-9bbd-bf1c352f8f77))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "C1") (unit 1)
         )
@@ -1761,7 +1761,7 @@
     (property "Value" "BC547/S9014" (at 144.145 83.185 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_TO_SOT_THT:TO-92_Inline" (at 143.51 83.82 0)
+    (property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide" (at 143.51 83.82 0)
       (effects (font (size 1.27 1.27) italic) (justify left) hide)
     )
     (property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" (at 138.43 81.915 0)
@@ -1771,7 +1771,7 @@
     (pin "2" (uuid 33cb13a4-08ba-428b-82b2-aece4f79bb41))
     (pin "1" (uuid 894d196b-bb26-48bf-b662-3b3d2692937d))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "Q1") (unit 1)
         )
@@ -1796,7 +1796,7 @@
     )
     (pin "1" (uuid ddba1211-3a42-45f3-8fd9-c90bdec79260))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "#PWR03") (unit 1)
         )
@@ -1823,7 +1823,7 @@
     (pin "1" (uuid ea31825d-773e-4b26-a52f-87bd9b09f702))
     (pin "2" (uuid cd2ab457-089c-44fe-9e35-9ff13cf2ebc1))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "Switch1") (unit 1)
         )
@@ -1849,7 +1849,7 @@
     (pin "2" (uuid c04407c9-806f-44d0-8567-a9bf59c375ba))
     (pin "1" (uuid 7cd33111-51bb-4f75-93b8-5acfc07683c2))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "C3") (unit 1)
         )
@@ -1874,7 +1874,7 @@
     )
     (pin "1" (uuid 3a7e4a5e-98e6-4777-997b-58423b709642))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "#PWR04") (unit 1)
         )
@@ -1900,7 +1900,7 @@
     (pin "2" (uuid c00fa9cc-76cc-490e-bb39-ac3ef59ba52a))
     (pin "1" (uuid c4055c04-9552-4c4c-a60d-138ee3d1d29b))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "C6") (unit 1)
         )
@@ -1932,7 +1932,7 @@
     (pin "1" (uuid 2be02ac9-f8c8-4475-9bba-fde50aff69d8))
     (pin "2" (uuid 0bcc0a33-9a06-4245-8919-36561c5e398b))
     (instances
-      (project "radio-9014x1"
+      (project "radio-9014x1-ss-wide-transistir"
         (path "/b6366648-9fec-4168-91d1-0e8832484c0a"
           (reference "D2") (unit 1)
         )
