@@ -49,7 +49,7 @@ lidWallHeight       = 20;
 //-- Make sure this isn't less than lidWallHeight
 ridgeHeight         = 3.5;
 ridgeSlack          = 0.2;
-roundRadius         = 1.0;
+roundRadius         = 2.0;
 
 //-- pcb dimensions
 pcbLength           = 95.5;
@@ -93,11 +93,11 @@ inspectY            = 0;
 // (2) = { yappBoth | yappLidOnly | yappBaseOnly }
 // (3) = { yappHole, YappPin }
 pcbStands = [
-                //[10, 10 ,yappBoth,yappPin] //does not work
-               [93, 125 ,yappBaseOnly,yappPin], // front right - hack to put YappPin on lid..
-                 [2, 125 ,yappBaseOnly,yappPin], //back right
-                  [2, 75 ,yappBaseOnly,yappPin], //back left
-                  [93, 75 ,yappBaseOnly,yappPin] //front left
+                //[10, 10 ,yappLidOnly,yappPin], //does not work
+               //[93, 125 ,yappBaseOnly,yappPin], // front right - hack to put YappPin on lid..
+                 [5.3, 125 ,yappBaseOnly,yappPin], //back right
+                  [5.3, 75 ,yappBaseOnly,yappPin], //back left
+                  //[93, 75 ,yappBaseOnly,yappPin] //front left
              ];
 
 //-- Lid plane    -- origin is pcb[0,0,0]
@@ -113,7 +113,7 @@ cutoutsLid =  [
     //speaker holes
    // rotate((j*360)/3)
 
-			  [70, pcbWidth/2+4, 2, 0, 0, yappCircle],
+			 // [70, pcbWidth/2+4, 2, 0, 0, yappCircle],
              
 //     [70, pcbWidth/2, 2, 0, 0, yappCircle],
 //        [70, pcbWidth/2+3, 2, 0, 0, yappCircle],
@@ -131,7 +131,7 @@ cutoutsLid =  [
                    [75, 45, 6, 11, 0, yappRectangle], 
            
     // tuner capacitor
-                  [14.5, pcbWidth/2, 10, 0, 0, yappCircle],
+                  [18.9, pcbWidth/2-2.5, 10, 0, 0, yappCircle],
                   
                   
    // wild style
@@ -159,7 +159,7 @@ cutoutsLid =  [
         
        [70*single_rand_small, single_rand_small*2,single_rand_small/3, single_rand_small, single_rand_big, yappCircle],
         
-        [60+single_rand_small, single_rand_small,single_rand_small, single_rand_small, single_rand_big+5, yappCircle],
+        [60+single_rand_small+2, single_rand_small,single_rand_small, single_rand_small, single_rand_big+5, yappCircle],
         
         [55-single_rand_small, single_rand_small+single_rand_big,single_rand_small, single_rand_small/4, single_rand_big-20, yappCircle]
        
@@ -169,7 +169,9 @@ cutoutsLid =  [
       ,[60*single_rand_small, pcbWidth/2, 5, 9, -10, yappRectangle, yappCenter],
             [70, 2*single_rand_small, 7, 15, 10, yappRectangle]
       ,[pcbLength-19*single_rand_small-10, 20, 6, 0, 0, yappCircle] 
-      ,[30+single_rand_small, pcbWidth/2+2, 15, 1, -30, yappRectangle, yappCenter]
+      ,[30+single_rand_small, pcbWidth/2+2, 20, 3, -30, yappRectangle, yappCenter]
+      
+               ,[30+single_rand_small+single_rand_big, pcbWidth/2+2, 15+single_rand_small, 3, single_rand_small, yappRectangle, yappCenter]
                 
               ];
               
@@ -223,7 +225,8 @@ cutoutsBase = [
       ,[60*single_rand_small, pcbWidth/2, 5, 9, -10, yappRectangle, yappCenter],
             [70, 2*single_rand_small, 7, 15, 10, yappRectangle]
       ,[pcbLength-19*single_rand_small-10, 20, 6, 0, 0, yappCircle] 
-      ,[30+single_rand_small, pcbWidth/2+2, 15, 1, -30, yappRectangle, yappCenter]
+      ,[30+single_rand_small, pcbWidth/2+2, 15, 3, -30, yappRectangle, yappCenter]
+            ,[30+single_rand_small+single_rand_big, pcbWidth/2+2, 15+single_rand_small, 3, single_rand_small, yappRectangle, yappCenter]
       
         ];
 
@@ -237,7 +240,7 @@ cutoutsBase = [
 // (6) = { yappCenter }
 cutoutsFront =  [ // jack connector
            
-                   [28, 17, 7, 0, 0, yappCircle]
+                   [28, 14.7, 7, 0, 0, yappCircle]
                 ];
 
 //-- back plane  -- origin is pcb[0,0,0]
@@ -341,37 +344,33 @@ snapJoins   =   [
 // (6) = size
 // (7) = "label text"
 labelsPlane = [
-//[10,  10,   0, 0.6, "lid",   "Liberation Mono:style=bold",15, "636" ],
+[10,  10,   30, 4, "lid",   "Liberation Mono:style=bold",15, "6" ],
+[20,  20+single_rand_big,   single_rand_big-5, 4, "lid",   "Liberation Mono:style=bold",15, "3" ],
+[30,  40,   single_rand_big, 4, "lid",   "Liberation Mono:style=bold",15, "6" ],
 //
 //[100, 0, 0, 0.8, "base",  "Liberation Mono:style=bold",11, "Battery" ]
 
-             [70,  22,   20, 0.5, "left",  "Liberation Mono:style=bold", 7, "636" ],
-             
-             [75,  15,   20, 0.5, "left",  "Liberation Mono:style=bold", 3, "v1" ],
-                          [24,  25,   0, 0.5, "back",  "Liberation Mono:style=bold", 3.4, "Tuner" ],
-                          
-    [20,  15,   0, 0.5, "front",  "Liberation Mono:style=bold", 3, "Headphones" ],
-//               ,[ 8,   8,   0, 1.0, "left",  "Liberation Mono:style=bold", 7, "Left" ]
-//               ,[10,   5,   0, 1.2, "right", "Liberation Mono:style=bold", 7, "Right" ]
-//               ,[20,  20,   0, 1.2, "right", "Liberation Mono:style=bold", 7, "Right" ]
-//               ,[30,  10,   0, 1.5, "front", "Liberation Mono:style=bold", 7, "Front" ]
-//               ,[40,  23,   0, 1.5, "front", "Liberation Mono:style=bold", 7, "Front" ]
-               //,[ 5,   5,   0, 1.1, "back",  "Liberation Mono:style=bold", 8, "Back" ]
-              // ,[20,  22,   0, 2.1, "back",  "Liberation Mono:style=bold", 8, "Back" ]
-            
- //wild style
-
-               [40,  60,   0, 0.5, "lid",   "Liberation Mono:style=bold",15, "Lid" ]
-               ,[100, 90, 180, 0.5, "base",  "Liberation Mono:style=bold",11, "Base" ]
-               ,[75,  22,   0, 0.5, "left",  "Liberation Mono:style=bold", 7, "Left" ]
-               ,[ 8,   8,   0, 0.5, "left",  "Liberation Mono:style=bold", 7, "Left" ]
-               ,[10,   5,   0, 0.5, "right", "Liberation Mono:style=bold", 7, "Right" ]
-               ,[20,  20,   0, 0.5, "right", "Liberation Mono:style=bold", 4, "on/off" ]
-               ,[30,  10,   0, 0.5, "front", "Liberation Mono:style=bold", 7, "Front" ]
-               ,[40,  23,   0, 0.5, "front", "Liberation Mono:style=bold", 7, "Front" ]
-               ,[ 5,   5,   0, 0.5, "back",  "Liberation Mono:style=bold", 8, "Back" ]
-               ,[20,  22,   0, 0.5, "back",  "Liberation Mono:style=bold", 8, "Back" ]
-              ];
+//             [70,  22,   20, 0.5, "left",  "Liberation Mono:style=bold", 7, "636" ],
+//             
+//             [75,  15,   20, 0.5, "left",  "Liberation Mono:style=bold", 3, "v1" ],
+//                          [24,  25,   0, 0.5, "back",  "Liberation Mono:style=bold", 3.4, "Tuner" ],
+//                          
+//    [20,  15,   0, 0.5, "front",  "Liberation Mono:style=bold", 3, "Headphones" ],
+//
+//            
+// //wild style
+//
+//               [40,  60,   0, 0.5, "lid",   "Liberation Mono:style=bold",15, "Lid" ]
+//               ,[100, 90, 180, 0.5, "base",  "Liberation Mono:style=bold",11, "Base" ]
+//               ,[75,  22,   0, 0.5, "left",  "Liberation Mono:style=bold", 7, "Left" ]
+//               ,[ 8,   8,   0, 0.5, "left",  "Liberation Mono:style=bold", 7, "Left" ]
+//               ,[10,   5,   0, 0.5, "right", "Liberation Mono:style=bold", 7, "Right" ]
+//               ,[20,  20,   0, 0.5, "right", "Liberation Mono:style=bold", 4, "on/off" ]
+//               ,[30,  10,   0, 0.5, "front", "Liberation Mono:style=bold", 7, "Front" ]
+//               ,[40,  23,   0, 0.5, "front", "Liberation Mono:style=bold", 7, "Front" ]
+//               ,[ 5,   5,   0, 0.5, "back",  "Liberation Mono:style=bold", 8, "Back" ]
+//               ,[20,  22,   0, 0.5, "back",  "Liberation Mono:style=bold", 8, "Back" ]
+           ];
               
               
               
@@ -384,4 +383,5 @@ module lidHook()
 }
 
 //--- this is where the magic hapens ---
+
 YAPPgenerate();
