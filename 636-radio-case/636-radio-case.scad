@@ -48,7 +48,7 @@ lidWallHeight       = 20;
 //-- ridge where base and lid off box can overlap
 //-- Make sure this isn't less than lidWallHeight
 ridgeHeight         = 3.5;
-ridgeSlack          = 0.2;
+ridgeSlack          = 0.4;
 roundRadius         = 2.0;
 
 //-- pcb dimensions
@@ -58,7 +58,7 @@ pcbThickness        = 1.5;
 
 //-- How much the PCB needs to be raised from the base
 //-- to leave room for solderings and whatnot
-standoffHeight      = 5.1; //5.1
+standoffHeight      = 7.8; //5.1
 pinDiameter         = 2.0;
 pinHoleSlack        = 0.5;
 standoffDiameter    = 4;
@@ -240,7 +240,7 @@ cutoutsBase = [
 // (6) = { yappCenter }
 cutoutsFront =  [ // jack connector
            
-                   [28, 14.7, 7, 0, 0, yappCircle]
+                   [28, 12, 7, 0, 0, yappCircle]
                 ];
 
 //-- back plane  -- origin is pcb[0,0,0]
