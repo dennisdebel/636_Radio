@@ -240,7 +240,7 @@ cutoutsBase = [
 // (6) = { yappCenter }
 cutoutsFront =  [ // jack connector
            
-                   [28, 12, 7, 0, 0, yappCircle]
+                   [28, 9.1, 7, 0, 0, yappCircle]
                 ];
 
 //-- back plane  -- origin is pcb[0,0,0]
