@@ -11,6 +11,6 @@ The pcb is designed in KiCad. If you want to produce this board directly, the la
 The [case](https://github.com/dennisdebel/636_Radio/tree/main/636-radio-case) and tuner button are designed in OpenSCAD based on the excellent [YAPP_box](https://github.com/mrWheel/YAPP_Box) (Yet Another Parametric Projectbox generator). Find the printable box [here](https://github.com/dennisdebel/636_Radio/blob/main/636-radio-case/636-radio-case-2.1.stl)
 
 ## Bill Of Materials
-The bill of materials and interactive assembly guide can be found [here](bom/ibom.html).
+The bill of materials and interactive assembly guide can be found [here](bom/ibom.html). Please ignore the footprint names of some of the components, namely C1 (this is a variable capacitor) and L1 (AM ferrite antenna).
 
 Let me know if you have any issues, suggestions and/or questions!
